@@ -44,9 +44,9 @@ tM = data["main"]["temp_max"]
 
 m =u"Ce jour à " + ville + " " +  d + u" température entre " + str(tm) + " et " + str(tM) + u" degrés"
 """
-m = "bien appelé cher Monsieur"
-current_session_id = intentMessage.session_id
-hermes.publish_end_session(current_session_id, m)
+    m = "bien appelé cher Monsieur"
+    current_session_id = intentMessage.session_id
+    hermes.publish_end_session(current_session_id, m)
 
 
 if __name__ == "__main__":
