@@ -33,7 +33,7 @@ def subscribe_intent_callback(hermes, intentMessage):
 def action_wrapper(hermes, intentMessage, conf):
  
 
-v = intentMessage.slots.ville.first().value
+"""v = intentMessage.slots.ville.first().value
 r = requests.get("http://api.openweathermap.org/data/2.5/weather?q=v&appid=c427cad62f8bfde6ed0e800f59e1a39d&lang=fr&units=metric")
 data=r.json()
 
@@ -43,7 +43,8 @@ tm  = data["main"]["temp_min"]
 tM = data["main"]["temp_max"]
 
 m =u"Ce jour à " + ville + " " +  d + u" température entre " + str(tm) + " et " + str(tM) + u" degrés"
-  
+"""
+m = "bien appelé cher Monsieur"
 current_session_id = intentMessage.session_id
 hermes.publish_end_session(current_session_id, m)
 
